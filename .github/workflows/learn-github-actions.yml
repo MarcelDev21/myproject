@@ -66,3 +66,4 @@ jobs:
                 script: |
                     nginx -t
                     service nginx restart
+                    certbot certonly --nginx -d msnaissance.xcdcv.site --force-renew

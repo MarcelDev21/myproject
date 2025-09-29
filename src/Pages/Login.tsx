@@ -25,6 +25,7 @@ function Login() {
   const {register, handleSubmit, formState: { errors }, } = useForm({ resolver: yupResolver(schema), })
 
   const onSubmit: SubmitHandler<credentials> = (data) => {
+    console.log(data)
     setRedirect(true)
   }
 

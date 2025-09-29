@@ -1,9 +1,15 @@
-import React from 'react'
+import PagerFilter from '../Components/PagerFilter'
+import DemandeItems from '../Demandes/DemandeItems'
 
 function Demandes() {
   return (
     <div>
-      <h1>Mes Demandes</h1>
+      <PagerFilter
+        monPlaceHolder = "Faites votre recherche"
+      />
+      <div className='bg-blue-300 shadow-md rounded-md'>
+       <DemandeItems/>
+      </div>
     </div>
   )
 }

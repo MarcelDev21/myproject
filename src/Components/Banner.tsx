@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Banner() {
   return (
     <aside className='h-full bg-blue-500 md:flex flex-col justify-between text-slate-200'>

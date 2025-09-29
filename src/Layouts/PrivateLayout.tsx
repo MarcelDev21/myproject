@@ -1,5 +1,5 @@
-import React from 'react'
-import { Navigate, Outlet } from 'react-router'
+
+import { Outlet } from 'react-router'
 import Nav from '../Components/Nav'
 import Header from '../Components/Header'
 

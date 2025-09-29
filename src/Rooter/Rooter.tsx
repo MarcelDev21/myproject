@@ -58,10 +58,6 @@ const router = createBrowserRouter([
               element : <NewDeclarations/>
             },
             {
-              path : "newDeclarations",
-              element : <NewDeclarations/>
-            },
-            {
               path : "newAgent",
               element : <NewAgent/>
             },

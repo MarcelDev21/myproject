@@ -2,6 +2,7 @@ import { useState } from "react";
 import PagerFilter from "../Components/PagerFilter"
 import ProfileItems from "../Profiles/ProfileItems"
 import Modal from "../Components/Modal";
+import FormProfile from "../Profiles/FormProfile";
 
 function Profils() {
   const [isOpen, setIsOpen] =useState(false)
@@ -23,7 +24,7 @@ function Profils() {
         closeModal = {()=> setIsOpen(false)}
         title = "Presentation du modal"
       >
-        <p>Mon Corps du sujet</p>
+        <FormProfile/>
       </Modal>
     </div>
   )

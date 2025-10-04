@@ -3,10 +3,11 @@ import  GlobalApllicationReducer  from "./GlobalApplicationReducer"
 import { stateInitial } from "./GlobalApplicationReducer"
 import { SET_TOKEN } from "../MesConstantes"
 
-type stateProps = {
+/*type stateProps = {
   token: string,
   declaration: []
-}
+}*/
+
 type Props = {
   state: any
   setToken : (data: any) => void

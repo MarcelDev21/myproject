@@ -2,15 +2,17 @@
 import { Outlet } from 'react-router'
 import { Navigate } from 'react-router'
 import Banner from '../Components/Banner'
+import { useContext } from 'react'
+import { GlobalApplicationContext } from '../Context/Global/GlobalApplicationContextProvider'
 
 function PublicLayout() {
 
-    const token = ""
+    const {state} = useContext(GlobalApplicationContext)
 
   return (
     <div>
       {
-            token ? <Navigate to= "/private/declarations"/> : 
+            state.token ? <Navigate to= "/private/declarations"/> : 
             (
              <section className='min-h-screen grid md:grid-cols-2'>
                 <Banner/>
